@@ -68,6 +68,14 @@ nav a{
     cursor: pointer;  /* Muda o cursor para um ícone de mão ao passar sobre o botão */
 }
 .watch-button:hover {
-    background-color: var(--white);
+    background-color: var(--black-shadow);
     border-color: var(--white);
+}
+
+/* Estilo para a lista de filmes */
+.lista-de-filmes {
+    background-color: var(--black-shadow); /* Define a cor de fundo com transparência */
+    color: var(--white); /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona espaço interno */
+    text-align: center; /* Centraliza o conteúdo */
 }
