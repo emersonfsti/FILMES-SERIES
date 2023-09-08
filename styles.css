@@ -84,24 +84,61 @@ nav a{
     border-color: var(--white);
 }
 
-/* Estilo para a lista de filmes */
+/* Estilo para a seção de lista de filmes */
 .lista-de-filmes {
-    background-color: var(--black-shadow); /* Define a cor de fundo com transparência */
-    color: var(--white); /* Define a cor do texto como branco */
-    padding: 20px; /* Adiciona espaço interno */
-    text-align: center; /* Centraliza o conteúdo */
+    overflow: hidden; /* Oculta o conteúdo fora da área visível */
+    white-space: nowrap; /* Impede a quebra de linha do conteúdo */
+    position: relative; /* Define a posição relativa para posicionar os filmes */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-.lista-de-filmes h2{
-    font-size: 24px; /* Define o tamanho da fonte para o título */
+/* Estilo para o título da lista de filmes */
+.lista-de-filmes h2 {
+    font-size: 24px;
 }
 
+/* Estilo para os filmes dentro do carrossel */
 .filme {
-    margin: 20px; /* Adiciona espaço entre os filmes */
+    display: inline-block; /* Exibe os filmes lado a lado */
+    margin-right: 20px; /* Adiciona espaço entre os filmes */
+    transition: transform 0.5s ease; /* Adiciona uma animação de transição suave */
 }
-.filme img{
-    max-width: 100%; /* Garante que a imagem do filme não ultrapasse seu contêiner */
+
+/* Estilo para o título do filme */
+.filme h3 {
+    font-size: 18px; /* Define o tamanho da fonte do título */
+    margin-top: 5px; /* Adiciona espaço superior ao título */
 }
+
+/* Adicione este estilo para o botão de navegação do carrossel (opcional) */
+.carousel-button {
+    cursor: pointer;
+}
+
+/* Estilo para o contêiner do carrossel */
+.carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px; /* Espaço entre a seção filme-em-destaque e o carrossel */
+}
+
+/* Estilo para os filmes dentro do carrossel */
+.carousel .filme {
+    display: inline-block;
+    margin-right: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Estilo para o título do filme dentro do carrossel */
+.carousel .filme h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
 
 /* Estilo para o rodapé */
 footer{
