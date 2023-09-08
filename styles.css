@@ -2,6 +2,7 @@
 :root{
 --black-shadow: rgba(0,0,0,0.8) ;
 --white: rgba(255,255,255);
+--orage:#ff6600
 }
 
 /* Reset de estilos para limpar configurações padrão do navegador */
@@ -45,3 +46,28 @@ nav a{
 }
 
 /* Estilo para o filme em destaque */
+.filme-em-destaque{
+    background-color: var(--black-shadow); /* Define a cor de fundo com transparência */
+    color: var(--white); /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona espaço interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+.filme-em-destaque h2 {
+    font-size: 24px; /* Define o tamanho da fonte para o título */
+    border-bottom: 1px solid var(--white); /* Define a borda do texto como branco */
+}
+
+.filme-em-destaque button {
+    background-color: var(--orage);/* Define a cor de fundo do botão */
+    color: var(--white);/* Define a cor do texto do botão como branco */
+    border: 2px solid var(--white);
+    transition: backcolor-color 0.2s, border-color 0.2s;
+    border-radius: 50px;
+    padding: 10px 20px; /* Adiciona espaço interno do botão */
+    font-size: 18px; /* Define o tamanho da fonte do botao*/
+    cursor: pointer;  /* Muda o cursor para um ícone de mão ao passar sobre o botão */
+}
+.watch-button:hover {
+    background-color: var(--white);
+    border-color: var(--white);
+}
