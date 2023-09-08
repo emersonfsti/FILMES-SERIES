@@ -16,6 +16,7 @@ body{
     background-image: url("./imagens/man-os-steel.png"); /* Define a imagem de fundo */
     background-size: cover; /* Faz a imagem de fundo cobrir toda a tela */
     font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o texto */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
 /* Estilo para o cabeçalho */
@@ -24,6 +25,7 @@ header {
     color: var(--white); /* Define a cor do texto como branco */
     padding: 20px;/* Adiciona espaço interno */
     text-align: center;/* Centraliza o conteúdo */
+    border-bottom: 1px solid var(--white); /* Define a borda do texto como branco */
 }
 
 header h1 {
@@ -50,11 +52,21 @@ nav a{
     background-color: var(--black-shadow); /* Define a cor de fundo com transparência */
     color: var(--white); /* Define a cor do texto como branco */
     padding: 20px; /* Adiciona espaço interno */
-    text-align: center; /* Centraliza o conteúdo */
+    /* Adicione as propriedades abaixo para alinhar o texto no canto da página */
+    text-align: left; /* Alinha o texto à esquerda */
+    position: absolute; /* Define a posição absoluta para que o texto possa ser posicionado */
+    top: 120px; /* Distância do topo da página */
+    left: 20px; /* Distância da esquerda da página */
+    
+}
+
+/* Estilo para o texto dentro do filme em destaque */
+.filme-em-destaque p {
+    font-size: 18px; /* Define o tamanho da fonte do texto */
 }
 .filme-em-destaque h2 {
     font-size: 24px; /* Define o tamanho da fonte para o título */
-    border-bottom: 1px solid var(--white); /* Define a borda do texto como branco */
+
 }
 
 .filme-em-destaque button {
@@ -78,4 +90,30 @@ nav a{
     color: var(--white); /* Define a cor do texto como branco */
     padding: 20px; /* Adiciona espaço interno */
     text-align: center; /* Centraliza o conteúdo */
+}
+
+.lista-de-filmes h2{
+    font-size: 24px; /* Define o tamanho da fonte para o título */
+}
+
+.filme {
+    margin: 20px; /* Adiciona espaço entre os filmes */
+}
+.filme img{
+    max-width: 100%; /* Garante que a imagem do filme não ultrapasse seu contêiner */
+}
+
+/* Estilo para o rodapé */
+footer{
+    background-color: var(--black-shadow); /* Define a cor de fundo com transparência */
+    color: var(--white); /* Define a cor do texto como branco */
+    text-align: center;/* Centraliza o conteúdo */
+    padding: 10px 0; /* Adiciona espaço interno */
+}
+
+/* Estilo para links no rodapé */
+
+footer a{
+    color: var(--orage); /* Define a cor dos links como laranja */
+    text-decoration:none; /* Remove a sublinhado dos links */
 }
